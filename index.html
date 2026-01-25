@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3D4 - Negozio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1><span>Smartphon</span>Epicode</h1>
+    </header>
+
+    <main>
+        <section id="buttonContainer">
+            <h3>Sezione Pulsanti!</h3>
+            <div class="button">
+                <button onclick="modTitle()">Cambia il titolo!</button>
+                <button onclick="modBackground()">Cambia lo sfondo!</button>
+                <button onclick="modAddress()">Cambia l'indirizzo del footer!</button>
+                <button onclick="addStyleLink()">Aggiungi lo stile ai link!</button>
+                <button onclick="hideImage()">Nascondi le immagini</button>
+                <button id="specialButton" onclick="magicRandomColor()">Magia! Guarda i Prezzi!</button>
+
+            </div>
+        </section>
+
+        <section id="homepageCard">
+            <div id="container">
+                <!-- iPhone -->
+                <div class="cardContainer">
+                    <div class="card">
+                        <h2 class="titleProduct">iPhone 17 Pro Max</h2>
+                        <div class="imgCard">
+                            <img src="./assets/img/iphone-17-pro-max.jpg"
+                                alt="iPhone 17 Pro Max, Immagine dimostrativa del prodotto">
+                        </div>
+                        <p class="descriptionProduct">
+                            iPhone 17 Pro Max unisce design premium, prestazioni di alto livello e un comparto
+                            fotografico avanzato,
+                            offrendo un’esperienza fluida e potente in ogni situazione.
+                        </p>
+                        <p class="priceProduct">Prezzo: 1.399,00€</p>
+                        <div class="linkProduct">
+                            <a href="https://www.amazon.it/Apple-iPhone-Pro-Max-256/dp/B0FQFQ6TDZ/ref=sr_1_3?__mk_it_IT=ÅMÅŽÕÑ&crid=1HZ1SLG08LPDR&dib=eyJ2IjoiMSJ9.4lRIknNigPFTn0siu96qjUGqPY3fpd0wN5cEzgYB_zzHwTKM49sKYMdvrPl7Qkz4dswt8KLM0bOI_7DWNtVQwAdzEK17oUfxcHAa7OWnxPsQVhZ16ktyD-LikF9kF4v-19flIlHAggtarrfw-mZXdiCkm1wYSP78lEqiMtUiDoAK_Kkg3Z2M_AUCeDTwHJAZOoC5XOCvQHAluRtyZsQlLE8pEItPHnNzhkqrLgCa57vLeYPKQqY-8Q6Hn8NNaBycHDF-s4MlwWHGSYqaTcNKMphU99FiBDOUuacMTGA4CkQ.yrRJ_dhj-ies1Jr4dzrK0uuSaUt4ma6s6n_OdU_06lM&dib_tag=se&keywords=iphone+17+pro+max&qid=1769249607&sprefix=iphone+17+pro+m%2Caps%2C255&sr=8-3&ufe=app_do%3Aamzn1.fos.fab33d48-9c05-47ad-9f19-2cb286ca613d"
+                                target="_blank">Scopri di più</a>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Lascia un commento sul prodotto">
+                </div>
+
+                <!-- Motorola -->
+                <div class="cardContainer">
+                    <div class="card">
+                        <h2 class="titleProduct">Motorola Edge 50 Ultra</h2>
+                        <div class="imgCard">
+                            <img src="./assets/img/motorola-edge-50-ultra.webp"
+                                alt="Motorola Edge 50 Ultra, Immagine dimostrativa del prodotto">
+                        </div>
+                        <p class="descriptionProduct">
+                            Motorola Edge 50 Ultra unisce design elegante, alte prestazioni e ricarica ultra-rapida,
+                            pensato per chi
+                            cerca velocità e stile senza compromessi.
+                        </p>
+                        <p class="priceProduct">Prezzo: 573,00€</p>
+                        <div class="linkProduct">
+                            <a href="https://www.amazon.it/Apple-iPhone-Pro-Max-256/dp/B0FQFQ6TDZ/ref=sr_1_3?__mk_it_IT=ÅMÅŽÕÑ&crid=1HZ1SLG08LPDR&dib=eyJ2IjoiMSJ9.4lRIknNigPFTn0siu96qjUGqPY3fpd0wN5cEzgYB_zzHwTKM49sKYMdvrPl7Qkz4dswt8KLM0bOI_7DWNtVQwAdzEK17oUfxcHAa7OWnxPsQVhZ16ktyD-LikF9kF4v-19flIlHAggtarrfw-mZXdiCkm1wYSP78lEqiMtUiDoAK_Kkg3Z2M_AUCeDTwHJAZOoC5XOCvQHAluRtyZsQlLE8pEItPHnNzhkqrLgCa57vLeYPKQqY-8Q6Hn8NNaBycHDF-s4MlwWHGSYqaTcNKMphU99FiBDOUuacMTGA4CkQ.yrRJ_dhj-ies1Jr4dzrK0uuSaUt4ma6s6n_OdU_06lM&dib_tag=se&keywords=iphone+17+pro+max&qid=1769249607&sprefix=iphone+17+pro+m%2Caps%2C255&sr=8-3&ufe=app_do%3Aamzn1.fos.fab33d48-9c05-47ad-9f19-2cb286ca613d"
+                                target="_blank">Scopri di più</a>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Lascia un commento sul prodotto">
+                </div>
+
+                <!-- Samsung -->
+                <div class="cardContainer">
+                    <div class="card">
+                        <h2 class="titleProduct">Samsung S25 Ultra</h2>
+                        <div class="imgCard">
+                            <img src="./assets/img/samsung-s25-ultra.jpg"
+                                alt="Samsung Galaxy S25 Ultra, Immagine dimostrativa del prodotto">
+                        </div>
+                        <p class="descriptionProduct">
+                            Galaxy S25 Ultra combina potenza, versatilità e un sistema fotografico avanzato,
+                            offrendo prestazioni
+                            elevate e un’esperienza premium pensata per ogni esigenza.
+                        </p>
+                        <p class="priceProduct">Prezzo: 978,00€</p>
+                        <div class="linkProduct">
+                            <a href="https://www.amazon.it/Samsung-Smartphone-produttore-Fotocamera-Silverblue/dp/B0DPL2PPS2/ref=sr_1_1"
+                                target="_blank">Scopri di più</a>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Lascia un commento sul prodotto">
+                </div>
+
+                <!-- Pixel -->
+                <div class="cardContainer">
+                    <div class="card">
+                        <h2 class="titleProduct">Google Pixel 10 Pro</h2>
+                        <div class="imgCard">
+                            <img src="./assets/img/google-pixel-10-pro.jpg"
+                                alt="Google Pixel 10 Pro, Immagine dimostrativa del prodotto">
+                        </div>
+                        <p class="descriptionProduct">
+                            Pixel 10 Pro punta su semplicità, intelligenza artificiale e fotografia computazionale,
+                            garantendo
+                            un’esperienza fluida, intuitiva e sempre affidabile.
+                        </p>
+                        <p class="priceProduct">Prezzo: 799,00€</p>
+                        <div class="linkProduct">
+                            <a href="https://www.amazon.it/Google-Pixel-Pro-Smartphone-fotocamera/dp/B0FHL2WPNW/ref=sr_1_1_sspa"
+                                target="_blank">Scopri di più</a>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Lascia un commento sul prodotto">
+                </div>
+
+                <!-- Nothing -->
+                <div class="cardContainer">
+                    <div class="card">
+                        <h2 class="titleProduct">Nothing Phone 3</h2>
+                        <div class="imgCard">
+                            <img src="./assets/img/nothing-phone-3.jpg"
+                                alt="Nothing Phone 3, Immagine dimostrativa del prodotto">
+                        </div>
+                        <p class="descriptionProduct">
+                            Nothing Phone (3) evolve il design iconico del brand con prestazioni migliorate e
+                            un’esperienza fluida,
+                            mantenendo un’interfaccia essenziale e distintiva.
+                        </p>
+                        <p class="priceProduct">Prezzo: 699,99€</p>
+                        <div class="linkProduct">
+                            <a href="https://www.amazon.it/Nothing-Phone-Smartphone-fotocamera-silicio-carbonio/dp/B0F6Y8F3QD/ref=sr_1_4"
+                                target="_blank">Scopri di più</a>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Lascia un commento sul prodotto">
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h1><span>Smartphon</span>Epicode</h1>
+        <p id="addressShop">Via Roma, 23 - 00198 Roma (RM)</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  background-color: cadetblue;
+}
+
+header h1 {
+  color: white;
+  align-content: center;
+  font-weight: 600;
+}
+
+header h1 span {
+  font-weight: 300;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.button,
+#buttonContainer h3 {
+  width: 100%;
+  display: flex;
+  margin: 1em 0;
+  gap: 0 1em;
+  justify-content: center;
+}
+
+.button button {
+  padding: 1em;
+  background-color: white;
+  border: none;
+  border-radius: 10em;
+  box-shadow: 0em 0em 1em #888888;
+  cursor: pointer;
+  color: black;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.button button:hover {
+  color: white;
+  background-color: cadetblue;
+  box-shadow: 0em 0em 1em #888888;
+}
+
+#specialButton {
+  border: 3px solid cadetblue;
+  width: auto;
+  height: auto;
+}
+
+.button button:active {
+  background-color: rgb(58, 96, 97);
+  color: white;
+}
+
+#homepageCard {
+  overflow: hidden;
+  display: flex;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  padding: 2em;
+  gap: 0 2em;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em 0;
+  border: 3px solid cadetblue;
+  border-radius: 2em;
+  width: 20em;
+  height: auto;
+  overflow: hidden;
+  padding: 2em;
+  background-color: white;
+  align-items: center;
+}
+
+.imgCard {
+  width: 20em;
+  height: auto;
+}
+
+.imgCard img {
+  width: 20em;
+  height: auto;
+  object-fit: cover;
+}
+
+.descriptionProduct {
+  font-weight: 300;
+}
+
+.priceProduct {
+  font-weight: 600;
+}
+
+.containerLink {
+  border: 2px solid cadetblue;
+  padding: 0.7em;
+  border-radius: 20em;
+}
+
+.styleLinkAmazon {
+  text-decoration: none;
+  color: cadetblue;
+  font-weight: 600;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer input {
+  align-self: center;
+  text-align: center;
+  width: 20em;
+  border: 2px solid cadetblue;
+  border-radius: 2em;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: rgba(239, 239, 239, 0.523);
+}
+
+.cardContainer input:focus {
+  outline: none;
+  background-color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  gap: 1em 0;
+}
